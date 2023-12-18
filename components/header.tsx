@@ -23,7 +23,7 @@ const Header = () => {
                   <Link href={link.hash} onClick={() => {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
-                }} className={`hover:text-gray-950 transition relative ${activeSection === link.name ? 'text-gray-950 dark:text-gray-200' : ''}`}>
+                }} className={`hover:text-gray-950 transition relative py-2 px-3 ${activeSection === link.name ? 'text-gray-950 dark:text-gray-200' : ''}`}>
                     {link.name}
 
                     {link.name === activeSection && (
