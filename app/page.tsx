@@ -1,10 +1,14 @@
 import Image from 'next/image';
 import About from '@/components/about';
+import Intro from '@/components/home';
+import ModeToggle from '@/components/toggle';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <section id="home" className='mb-96 scroll-mt-28'>home</section>
+      <ModeToggle/>
+      <Intro/>
       {/* <section id="about" className='my-96 scroll-mt-28'>about</section> */}
       <About/>
       <section id="projects" className='my-96 scroll-mt-28'>projects</section>
