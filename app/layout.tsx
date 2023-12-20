@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { ThemeProvider } from "@/components/theme-provider";
+import ModeToggle from "@/components/toggle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <ModeToggle />
           </ActiveSectionContextProvider>
         </ThemeProvider>
       </body>
