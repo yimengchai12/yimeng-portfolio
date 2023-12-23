@@ -18,7 +18,7 @@ export default function Intro() {
       initial={{ opacity: 0, x:-100}}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.175 }}
-      id="Home"
+      id="home"
     >
       <div className="flex w-full items-center justify-center">
         <div>

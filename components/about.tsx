@@ -17,10 +17,9 @@ export default function About() {
       id="about"
     >
       <h1 className="md:text-6xl text-4xl font-bold">About me</h1>
-      <p className="mt-8 text-xl leading-10">
+      <p className="mt-8 text-xl leading-[2.5rem] text-center">
         I am a year 3 student studying <span className="font-bold">Information Systems</span> at <span className="font-bold">Singapore Management University</span>, taking a dual track in <span className="font-bold">Digital & Cloud Solutions </span> and <span className="font-bold">Business Analytics</span>.
         I have a strong interest in <span className="font-bold">software engineering</span> and I am also exploring <span className="font-bold">artificial intelligence</span>.
-        <br></br>
         As someone who has always been deeply fascinated by the ever-evolving world of technology, I am always looking for opportunities to learn and grow as a developer. The excitement of facing new challenges and overcoming them is what keeps me motivated and engaged. I am greatly captivated by the dynamic nature of this field. The constant evolution ensures there's always a new language to learn, a novel framework to master, or a fresh approach to adopt. It's this ever-evolving journey that keeps my curiosity alive and fuels my quest for knowledge.
       </p>
 
