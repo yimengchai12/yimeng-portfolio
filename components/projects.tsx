@@ -15,23 +15,22 @@ export default function Projects() {
   return (
     <motion.section
     ref={ref}
-    className="mb-4 max-w-[80rem] w-full text-center leading-8 sm:mb-20  scroll-mt-28"
+    className="mb-4 w-full text-center leading-8 sm:mb-20  scroll-mt-28"
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.175 }}
     id="projects"
   >
     <h1 className="md:text-6xl text-4xl font-bold mb-10 mt-10">Projects</h1>
-    <div className="grid grid-cols-12 gap-4 w-full">
-      <div className="col-span-12 sm:col-span-6">
-        <ProjectCard/>
-      </div>
-      <div className="col-span-12 sm:col-span-6">
-        <ProjectCard />
+    <div className="container mx-auto">
+      <div className="lg:flex md:flex sm:flex items-center xl:justify-around flex-wrap md:justify-around sm:justify-around lg:justify-around">
+          <ProjectCard/>
+          <ProjectCard/>
+          {/* <ProjectCard/> */}
+          {/* <ProjectCard/> */}
       </div>
 
     </div>
-    
   </motion.section>
   );
 } 
