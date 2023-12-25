@@ -2,6 +2,7 @@ import React from "react";
 import artMarketplace from "../public/art_marketplace.png";
 import formManagement from "../public/form_management.png";
 import portfolio from "../public/portfolio.png";
+import SAQ from "../public/SAQ.png";
 import { LiaUniversitySolid } from "react-icons/lia";
 import { GiArchiveResearch } from "react-icons/gi";
 import { MdWork } from "react-icons/md";
@@ -62,7 +63,7 @@ export const projectsData = [
     title: "Automatic Grading of Short Answer Questions",
     skills: ["Flask", "Python", "Javascript", "CSS", "MongoDB", "Docker", "Bootstrap", "LLM", "ChromaDB", "Vue.js"],
     description: "A web application with short answer quizzes that allows for automated grading and feedbacks with GPT model with enhanced accuracy.",
-    image: artMarketplace
+    image: SAQ
   },
   {
     title: "Online Tutoring Platform",
