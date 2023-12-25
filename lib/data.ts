@@ -1,8 +1,10 @@
 import React from "react";
 import artMarketplace from "../public/art_marketplace.png";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import formManagement from "../public/form_management.png";
+import portfolio from "../public/portfolio.png";
+import { LiaUniversitySolid } from "react-icons/lia";
+import { GiArchiveResearch } from "react-icons/gi";
+import { MdWork } from "react-icons/md";
 
 export const links = [
   {
@@ -42,13 +44,13 @@ export const projectsData = [
     title: "Form Management Application",
     skills: ["Java", "Spring Boot", "MySQL", "Vue.js", "Javascript", "Bootstrap", "Docker", "MongoDB"],
     description: "A form management application which includes a form builder and workflow management of forms for different roles.",
-    image: artMarketplace
+    image: formManagement
   },
   {
     title: "Personal Portfolio",
     skills: ["Next.js", "HTML", "Tailwind CSS", "Javascript"],
     description: "A personal portfolio to showcase my projects and skills.",
-    image: artMarketplace
+    image: portfolio
   },
   {
     title: "Activity Booking Web Application",
@@ -104,27 +106,27 @@ export const skillsData = [
 
 export const experiencesData = [
   {
-    title: "developer",
-    location: "Singapore",
+    title: "Software Engineer Intern",
+    company: "Aspri Group",
     description:
-      "developer",
-    icon: React.createElement(LuGraduationCap),
-    date: "2022",
+      "I developed a full stack application from scratch with template builder, compression of files, password protection of PDF and linking to Dropbox API with Next.js and MongoDB",
+    icon: React.createElement(MdWork),
+    date: "2023 October - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Singapore",
+    title: "Teaching Assistant for IS111(Introduction to Programming), IS112(Data Management) and IS210(Business Process Analysis and Solutioning)",
+    company: "Singapore Management University",
     description:
-      "develoepr",
-    icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2023",
+      "I provide administrative and academic assistance to the professor and students respectively. I also review students' lab assignments and provide individualized feedback.",
+    icon: React.createElement(LiaUniversitySolid),
+    date: "2022 August - 2023 November",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Singapore",
+    title: "AI Research Intern",
+    company: "Singapore Management University",
     description:
-      "develoepr",
-    icon: React.createElement(FaReact),
-    date: "2022 - present",
+      "I developed a full stack web application with short answer quizzes that allow for automated grading and feedbacks with GPT model. I also analyzed the accuracy of GPT model in automatic evaluation of short answer questions, writing a research paper on the subject topic.",
+    icon: React.createElement(GiArchiveResearch),
+    date: "2023 May - 2023 August",
   },
 ] as const;

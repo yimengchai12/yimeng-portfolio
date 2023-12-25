@@ -56,3 +56,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+html {
+  --line-color: #000000;
+}
+
+html.dark {
+  --line-color: #fff;
+}
