@@ -1,36 +1,40 @@
 import React from "react";
 import Image from "next/image";
-import pic from "../public/wad.png";
 import { Badge } from "@/components/ui/badge";
+import { projectsData } from "@/lib/data";
 
-const ProjectCard = () => {
+type ProjectCardProps = typeof projectsData[number];
+
+const ProjectCard = ({ title, skills, description, image} : ProjectCardProps) => {
   return (
     <div
       className="xl:w-5/12 sm:w-3/4 md:w-3/4 relative mt-16 mb-32 sm:mb-24 xl:max-w-5/12 lg:min-w-[25rem]"
     >
-      <div className="rounded-xl overflow-hidden shadow-xl dark:border-2 dark:border-white ">
+      <div className="rounded-xl overflow-hidden shadow-xl dark:border-2 dark:border-white xl:min-h-[25rem] pb-6">
         <div className="absolute -mt-20 w-full flex justify-center">
-          <div className="h-[11rem] w-[20rem]  ">
+          <div className="h-[11rem] w-[20rem]">
             <Image
-              src={pic}
+              src={image}
               alt="pic"
               className="rounded-[25px] object-cover h-full w-full shadow-md border-4 border-solid dark:border-white"
             />
           </div>
         </div>
         <div className="px-6 mt-28">
-          <h1 className="font-bold text-3xl text-center mb-2 ">
-            Art MarketPlace
+          <h1 className="font-bold text-3xl text-center mb-4 ">
+            {title}
           </h1>
           <div className="flex justify-center gap-2 flex-wrap">
-            <Badge variant="default">Secondary</Badge>
-            <Badge variant="default">Secondary</Badge>
+            {skills.map((skill) => (
+              <React.Fragment key={skill}>
+                <Badge variant="default">{skill}</Badge>
+              </React.Fragment>
+            ))}
           </div>
           <p className="text-center text-base pt-3 font-normal">
-            The CEO's role in raising a company's corporate IQ is to establish
-            an atmosphere that promotes knowledge sharing and collaboration.
+            {description}
           </p>
-          <div className="w-full flex justify-center pt-5 pb-5">
+          {/* <div className="w-full flex justify-center pt-5 pb-5">
             <a href="javascript:void(0)" className="mx-5">
               <div aria-label="Github" role="img">
                 <svg
@@ -87,7 +91,7 @@ const ProjectCard = () => {
                 </svg>
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
