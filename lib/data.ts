@@ -49,7 +49,7 @@ export const projectsData = [
   },
   {
     title: "Personal Portfolio",
-    skills: ["Next.js", "HTML", "Tailwind CSS", "Javascript"],
+    skills: ["Next.js", "HTML", "Tailwind CSS", "Typescript"],
     description: "A personal portfolio to showcase my projects and skills.",
     image: portfolio
   },
@@ -103,6 +103,7 @@ export const skillsData = [
   "Selenium",
   "LangChain",
   "FastAPI",
+  "RabbitMQ",
 ] as const;
 
 export const experiencesData = [
@@ -112,7 +113,7 @@ export const experiencesData = [
     description:
       "I developed a full stack application from scratch with template builder, compression of files, password protection of PDF and linking to Dropbox API with Next.js and MongoDB",
     icon: React.createElement(MdWork),
-    date: "2023 October - Present",
+    date: "2023 Oct - Present",
   },
   {
     title: "Teaching Assistant for IS111(Introduction to Programming), IS112(Data Management) and IS210(Business Process Analysis and Solutioning)",
@@ -120,7 +121,7 @@ export const experiencesData = [
     description:
       "I provide administrative and academic assistance to the professor and students respectively. I also review students' lab assignments and provide individualized feedback.",
     icon: React.createElement(LiaUniversitySolid),
-    date: "2022 August - 2023 November",
+    date: "2022 Aug - 2023 Nov",
   },
   {
     title: "AI Research Intern",
@@ -128,6 +129,6 @@ export const experiencesData = [
     description:
       "I developed a full stack web application with short answer quizzes that allow for automated grading and feedbacks with GPT model. I also analyzed the accuracy of GPT model in automatic evaluation of short answer questions, writing a research paper on the subject topic.",
     icon: React.createElement(GiArchiveResearch),
-    date: "2023 May - 2023 August",
+    date: "2023 May - 2023 Aug",
   },
 ] as const;

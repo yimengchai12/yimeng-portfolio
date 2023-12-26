@@ -7,8 +7,10 @@ import { useSectionInView } from "@/lib/hooks";
 import ProjectCard from "./projectCard";
 
 const Projects = () => {
-  const { ref } = useSectionInView("Projects", 0.2);
 
+  const threshold = window.innerWidth >= 1280 ? 0.2 : 0.05;
+  const { ref } = useSectionInView("Projects", threshold);
+  
   return (
     <motion.section
     ref={ref}

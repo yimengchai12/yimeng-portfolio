@@ -14,7 +14,8 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
-  const { ref } = useSectionInView("Experience", 0.75);
+  const threshold = window.innerWidth >= 1280 ? 0.2 : 0.05;
+  const { ref } = useSectionInView("Experience", threshold);
   const { theme, setTheme } = useTheme();
 
   return (
@@ -46,6 +47,7 @@ const Experience = () => {
                     ? "7px solid black"
                     : "7px solid white",
               }}
+              dateClassName="dark:text-gray-950 leading-1"
               iconStyle={{
                 background: theme === "light" ? "white" : "black",
                 fontSize: "1.5rem",
