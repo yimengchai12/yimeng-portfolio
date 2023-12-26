@@ -8,7 +8,10 @@ import ProjectCard from "./projectCard";
 
 const Projects = () => {
 
-  const threshold = window.innerWidth >= 1280 ? 0.2 : 0.05;
+  var threshold = 0.05;
+  if (typeof window !== "undefined"){
+    threshold = window.innerWidth >= 1280 ? 0.2 : 0.05;
+  }
   const { ref } = useSectionInView("Projects", threshold);
   
   return (

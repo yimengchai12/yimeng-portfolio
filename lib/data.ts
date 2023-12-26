@@ -3,6 +3,9 @@ import artMarketplace from "../public/art_marketplace.png";
 import formManagement from "../public/form_management.png";
 import portfolio from "../public/portfolio.png";
 import SAQ from "../public/SAQ.png";
+import blook from "../public/blook.png";
+import KM from "../public/KM.png";
+import edventure from "../public/edventure.png";
 import { LiaUniversitySolid } from "react-icons/lia";
 import { GiArchiveResearch } from "react-icons/gi";
 import { MdWork } from "react-icons/md";
@@ -57,7 +60,7 @@ export const projectsData = [
     title: "Activity Booking Web Application",
     skills: ["Flask", "CSS", "Javascript", "Python", "React.js", "MySQL", "Kong API Gateway", "Docker"],
     description: "A microservice web application to book activities, including features like loyalty points and coupons for payment with Stripe API.",
-    image: artMarketplace
+    image: blook
   },
   {
     title: "Automatic Grading of Short Answer Questions",
@@ -69,13 +72,13 @@ export const projectsData = [
     title: "Online Tutoring Platform",
     skills: ["Python", "CSS", "MongoDB", "Javascript", "React.js", "Docker", "Flask"],
     description: "A web application that allows students to book tutoring sessions with tutors. There are also question bank with quizzes and daily challenges to motivate students to use the platform.",
-    image: artMarketplace
+    image: edventure
   },
   {
     title: "Knowledge Management System",
     skills: ["FastAPI", "Python", "MySQL", "ChromaDB", "React.js", "Tailwind CSS", "Selenium", "LLM", "LangChain", "Javascript"],
     description: "A knowledge management system that allows users to upload documents or webscrape websites and retrieve relevant documents based on their queries.",
-    image: artMarketplace
+    image: KM
   }
 ] as const;
 

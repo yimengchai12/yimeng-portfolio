@@ -14,7 +14,10 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
-  const threshold = window.innerWidth >= 1280 ? 0.2 : 0.05;
+  var threshold = 0.05;
+  if (typeof window !== "undefined"){
+    threshold = window.innerWidth >= 1280 ? 0.2 : 0.05;
+  }
   const { ref } = useSectionInView("Experience", threshold);
   const { theme, setTheme } = useTheme();
 
