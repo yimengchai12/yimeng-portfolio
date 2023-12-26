@@ -23,8 +23,6 @@ export default function Home() {
       <Experience/>
       <SectionDivider/>
       <Contact/>
-      {/* <section id="contact" className='my-96 scroll-mt-28'>contact</section> */}
-
     </main>
   )
 }
