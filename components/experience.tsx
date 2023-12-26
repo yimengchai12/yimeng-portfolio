@@ -50,7 +50,7 @@ const Experience = () => {
                     ? "7px solid black"
                     : "7px solid white",
               }}
-              dateClassName="dark:text-gray-950 leading-1"
+              dateClassName="exp:text-white text-gray-950"
               iconStyle={{
                 background: theme === "light" ? "white" : "black",
                 fontSize: "1.5rem",
