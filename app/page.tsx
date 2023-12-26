@@ -3,6 +3,7 @@ import About from '@/components/about';
 import Intro from '@/components/home';
 import Skills from '@/components/skills';
 import Experience from '@/components/experience';
+import Contact from '@/components/contact';
 import ModeToggle from '@/components/toggle';
 import { Button } from '@/components/ui/button';
 import SectionDivider from '@/components/section-divider';
@@ -20,6 +21,8 @@ export default function Home() {
       <Skills/>
       <SectionDivider/>
       <Experience/>
+      <SectionDivider/>
+      <Contact/>
       {/* <section id="contact" className='my-96 scroll-mt-28'>contact</section> */}
 
     </main>
